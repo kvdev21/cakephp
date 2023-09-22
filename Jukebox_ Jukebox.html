@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0025)http://127.0.0.1/JUKEBOX/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>
+        Jukebox:
+		Jukebox	</title>
+	<link href="http://127.0.0.1/Jukebox/favicon.ico" type="image/x-icon" rel="icon">
+    <link href="http://127.0.0.1/Jukebox/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="./Jukebox_ Jukebox_files/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="./Jukebox_ Jukebox_files/dashboard.css">
+    <script src="./Jukebox_ Jukebox_files/db.js"></script>
+  
+</head>
+<body >
+	
+			
+
+<!-- <div class="main">
+    <div class="gradient" id="update" >
+        <div class="image-container"><img src="./img/permit_room/Text_panel.png"></div>
+        
+        <div class="title" id="update-title">Our music is designed to be spicy, sultry and hot.
+            <br><br>You will be able to help choose the sounds you<br>want to hear from 5pm</div>
+    </div> -->
+    <div class="main">
+        <div class="gradient" id="update" style="display: none;">
+            <div class="text-panel"><img src="../img/permit_room/Text_panel.PNG"></div>
+            <div class="title" id="update-title">Our music is designed to be spicy, sultry and hot.
+                <br><br>You will be able to help choose the sounds you<br>want to hear from 5pm</div>
+        </div>
+       <!--    <div id="video-container">
+            <div id="videoElement">
+              <embed type="application/x-vlc-plugin" pluginspage="http://www.videolan.org"
+                       width="750"
+                       height="425"
+                       id="vlc"
+                       toolbar="no"
+                       loop="true"
+                       allowfullscreen="false"
+                       version="VideoLAN.VLCPlugin.2"
+                       windowless="false"
+                       mute="true">
+                </embed> 
+            </div>
+        </div>-->
+        <div id="track-info">
+            <div id="trackname"></div>
+            <div id="artist"></div>
+        </div>
+        <div id="jbheader">Permit Room <div id="add-to-playlist" class=""></div></div>
+        <!--<div id="waveform">
+            <div class="slider"></div>
+        </div>
+        <div id="waveform-front"></div>-->
+        <!--  <div id="add-to-playlist"></div>
+      <div id="playlist-tracks" class="empty">
+            browse the track library</br>
+            and add your favourite tunes</br>
+            to enjoy whilst you workout
+        </div> -->
+        <div id="libraryheader">track library
+        </div>
+        <div id="tracklibrary" style="overflow: hidden; outline: none;" class=""><div class="track-grid"><div class="track" data-id="3614">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">A New Name</div>
+        <div class="artist">!!!</div>
+    </div><div class="track" data-id="2167">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Heart Of Hearts</div>
+        <div class="artist">!!!</div>
+    </div><div class="track" data-id="1470">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Chocolate</div>
+        <div class="artist">The 1975</div>
+    </div><div class="track" data-id="2628">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Girls</div>
+        <div class="artist">The 1975</div>
+    </div><div class="track" data-id="3745">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Heart Out</div>
+        <div class="artist">The 1975</div>
+    </div><div class="track" data-id="1047">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">The City</div>
+        <div class="artist">The 1975</div>
+    </div><div class="track" data-id="3727">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Bear Hug (Maxxi Soundsystem Remix) XXX</div>
+        <div class="artist">The 2 Bears</div>
+    </div><div class="track" data-id="1816">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Bear Hug</div>
+        <div class="artist">The 2 Bears</div>
+    </div><div class="track" data-id="134">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Work (St Etienne Remix)</div>
+        <div class="artist">The 2 Bears</div>
+    </div><div class="track" data-id="394">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">We Own It (Fast &amp; Furious)</div>
+        <div class="artist">2 Chainz Feat. Wiz Khalifa</div>
+    </div><div class="track" data-id="1898">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">She's Got That Vibe</div>
+        <div class="artist">2 Play Ft. Christian Jules</div>
+    </div><div class="track" data-id="2525">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Turn Me On (Turn Me Out) (7th Heaven Radio Edit)</div>
+        <div class="artist">2 Shoes</div>
+    </div><div class="track" data-id="3359">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Get Ready For This</div>
+        <div class="artist">2 Unlimited</div>
+    </div><div class="track" data-id="109">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">No Limit</div>
+        <div class="artist">2 Unlimited</div>
+    </div><div class="track" data-id="3605">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Ain't Bothered (Sammy Porter Radio Remix)</div>
+        <div class="artist">23 Unofficial</div>
+    </div><div class="track" data-id="3710">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Show You Love (MJ Cole Remix)</div>
+        <div class="artist">2Kato &amp; Sigala Feat. Hailee Steinfeld</div>
+    </div><div class="track" data-id="169">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Curious Girl</div>
+        <div class="artist">3 Monkeyzz</div>
+    </div><div class="track" data-id="3487">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Up In The Air</div>
+        <div class="artist">30 Seconds To Mars</div>
+    </div><div class="track" data-id="3047">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Starstrukk (Discotech Radio Edit)</div>
+        <div class="artist">30H!3 Feat. Katy Perry</div>
+    </div><div class="track" data-id="663">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Don't Trust Me</div>
+        <div class="artist">30H!3</div>
+    </div><div class="track" data-id="1954">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Good Girls</div>
+        <div class="artist">5 Seconds Of Summer</div>
+    </div><div class="track" data-id="2567">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">My Life</div>
+        <div class="artist">50 Cent Feat. Eminem &amp; Adam Levine</div>
+    </div><div class="track" data-id="3304">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Love Is Alive (Original Radio Edit)</div>
+        <div class="artist">7th Heaven Feat. Katherine Ellis</div>
+    </div><div class="track" data-id="1880">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Smile</div>
+        <div class="artist">808INK</div>
+    </div><div class="track" data-id="2000">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">The Girl Is Mine</div>
+        <div class="artist">99 Souls Feat. Brandy &amp; Destiny's Child</div>
+    </div><div class="track" data-id="658">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">The Girl Is Mine</div>
+        <div class="artist">99 Souls Feat. Brandy &amp; Destiny's Child</div>
+    </div><div class="track" data-id="3221">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Starbucks</div>
+        <div class="artist">A</div>
+    </div><div class="track" data-id="2272">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Feel Something</div>
+        <div class="artist">A-SHO</div>
+    </div><div class="track" data-id="751">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">SOS (Skylark Remix) (Disco Kandi)</div>
+        <div class="artist">A-Studio Feat. Polina</div>
+    </div><div class="track" data-id="2260">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">54 Push</div>
+        <div class="artist">A-Trak Feat. Andrew Wyatt</div>
+    </div><div class="track" data-id="1950">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Push [Patrick Hagenaar Colour Code Remix]</div>
+        <div class="artist">A-Trak Feat. Andrew Wyatt</div>
+    </div><div class="track" data-id="3607">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Parallel Lines (Radio Edit)</div>
+        <div class="artist">A-Trak Feat. Phantogram</div>
+    </div><div class="track" data-id="1596">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Push (The Chainsmokers Remix)</div>
+        <div class="artist">A-Trak Ft. Andrew Wyatt</div>
+    </div><div class="track" data-id="4104">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">We All Fall Down [eSQUIRE Houselife Remix]</div>
+        <div class="artist">A-Trak</div>
+    </div><div class="track" data-id="2227">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Joy N Rain</div>
+        <div class="artist">A.Armstrong</div>
+    </div><div class="track" data-id="583">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Jaws (Phlegmatic Dogs Remix)</div>
+        <div class="artist">AC Slater Feat Acid Mouth</div>
+    </div><div class="track" data-id="1026">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Weak</div>
+        <div class="artist">AJR Feat. Louisa Johnson</div>
+    </div><div class="track" data-id="2681">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Heartless (Ray Mang Radio Edit)</div>
+        <div class="artist">AME</div>
+    </div><div class="track" data-id="1326">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Play The Game Boy (Manhattan Clique Radio Edit)</div>
+        <div class="artist">AME</div>
+    </div><div class="track" data-id="1006">
+         <div id="add-to-playlist"></div> 
+        <div class="trackname">Activate Me (Hoodboi Remix)</div>
+        <div class="artist">ASTR</div>
+    </div></div><div class="pagination"><div class="prev-button"><img src="../img/permit_room/Back-arrow.png"><span>PREVIOUS</span></div><div class="next-button"><span>NEXT</span><img src="../img/permit_room/Next-arrow.png"></div></div></div>
+        <div id="filterheader">filter by</div>
+        <div id="filterheaders">
+            <div class="filterheadername">ARTIST NAME</div>
+            <div class="filterheadername on">TRACK NAME</div>
+        </div>
+      
+       <div id="filters"><div class="filter">
+        <div class="filtername">A</div>
+    </div><div class="filter">
+        <div class="filtername">B</div>
+    </div><div class="filter">
+        <div class="filtername">C</div>
+    </div><div class="filter">
+        <div class="filtername">D</div>
+    </div><div class="filter">
+        <div class="filtername">E</div>
+    </div><div class="filter">
+        <div class="filtername">F</div>
+    </div><div class="filter">
+        <div class="filtername">G</div>
+    </div><div class="filter">
+        <div class="filtername">H</div>
+    </div><div class="filter">
+        <div class="filtername">I</div>
+    </div><div class="filter">
+        <div class="filtername">J</div>
+    </div><div class="filter">
+        <div class="filtername">K</div>
+    </div><div class="filter">
+        <div class="filtername">L</div>
+    </div><div class="filter">
+        <div class="filtername">M</div>
+    </div><div class="filter">
+        <div class="filtername">N</div>
+    </div><div class="filter">
+        <div class="filtername">O</div>
+    </div><div class="filter">
+        <div class="filtername">P</div>
+    </div><div class="filter">
+        <div class="filtername">Q</div>
+    </div><div class="filter">
+        <div class="filtername">R</div>
+    </div><div class="filter">
+        <div class="filtername">S</div>
+    </div><div class="filter">
+        <div class="filtername">T</div>
+    </div><div class="filter">
+        <div class="filtername">U</div>
+    </div><div class="filter">
+        <div class="filtername">V</div>
+    </div><div class="filter">
+        <div class="filtername">W</div>
+    </div><div class="filter">
+        <div class="filtername">X</div>
+    </div><div class="filter">
+        <div class="filtername">Y</div>
+    </div><div class="filter on">
+        <div class="filtername">Z</div>
+    </div></div> 
+    </div>
+
+
+
+
+
+</body></html>

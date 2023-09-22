@@ -1,0 +1,423 @@
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background: #000000;
+    width: 1920px;
+    height: 1080px;
+    margin: 0;
+    font-family: "Helvetica Neue";
+    font-weight: bolder;
+    overflow: hidden;
+}
+
+div.main {
+    background: url('../img/permit_room/Background_img_01.png');
+    width: 100%;
+    height: 100%;
+}
+
+
+div#video-container {
+    top: 177px;
+    left: 103px;
+    width: 750px;
+    height: 425px;
+    position: absolute;
+}
+
+div#track-info {
+    top: 632px;
+    left: 88px;
+    width: 784px;
+    height: 30px;
+    position: absolute;
+}
+
+div#track-info div {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    height: 30px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+div#track-info div#trackname {
+    left: 15px;
+    width: 377px;
+    margin-left: 10px;
+}
+
+div#track-info div#artist {
+    position: absolute;
+    right: 0;
+    width: 377px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+div#waveform {
+    top: 677px;
+    left: 90px;
+    width: 780px;
+    height: 60px;
+    position: absolute;
+    background: url('../img/waveform-back.png') repeat-x;
+    overflow: hidden;
+}
+
+div#waveform .slider {
+    /*width: 32767px;*/
+    width: 5000px;
+    height: 55px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div#waveform-front {
+    top: 676px;
+    left: 90px;
+    width: 780px;
+    height: 59px;
+    position: absolute;
+    background: url('../img/waveform-front.png') repeat-x;
+    overflow: hidden;
+    z-index: 2;
+}
+
+div#add-to-playlist {
+    top: 890px;
+    left: 125px;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    background: url('../img/btn_Go_off.png');
+}
+
+div#add-to-playlist.on {
+    background: url('../img/btn_Go_on.png');
+}
+
+div#playlist-tracks {
+    top: 840px;
+    left: 330px;
+    width: 541px;
+    height: 180px;
+    position: absolute;
+    text-indent: -9999px;
+    text-align: center;
+    font-size: 30px;
+    color: #09FCFA;
+    padding-top: 0px;
+}
+
+div#playlist-tracks.empty {
+    text-indent: 0px;
+    padding-top: 30px;
+}
+
+div#playlist-tracks * {
+    text-indent: 0px;
+    text-align: left;
+}
+
+div#tracklibrary {
+    top: 328px;
+    left: 150px;
+    width: 1205px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+div#libraryheader {
+    top: 289px;
+    left: 150px;
+	font-weight: bold;
+	font-size: 25px;
+    position: absolute;
+}
+div#alphabet {
+    top: 352px;
+    left: 1456px;
+    width: 40px;
+    height: 930px;
+    position: absolute;
+    margin-top: 5px;
+  
+}
+
+div#filters {
+    top: 442px;
+    left: 1430px;
+  /*  width: 220px;
+    height: 930px;*/
+    position: absolute;
+    overflow: hidden;
+	 display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /*grid-template-rows: repeat(6, 1fr);*/
+  gap: 20px;
+	
+}
+
+div.track {
+    position: relative;
+    background: url('../img/permit_room/Track_In-active1.png');
+	height:60px;
+	width: 300px;
+    display:flex;
+    justify-content: space-between;
+     
+}
+
+div.track div {
+    position: relative;
+    width: 390px;
+    height: 22px;
+    left: 12px;
+    font-weight: bold !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+.trackcol {
+    flex-direction: column;
+}
+div.track div.icon {
+  
+ 
+    width: 32px;
+    height: 34px;
+     
+}
+
+div.track.audio div.icon {
+    background-image: url('../img/Icon_AudioOnly.PNG');
+}
+
+div.track.video div.icon {
+    background-image: url('../img/Icon_Video.png');
+}
+
+div.track div.trackname {
+    top: 10px;
+    color: #2f2c26;
+    font-size: 16px;
+}
+
+div.track div.artist {
+    
+    color: #2f2c26;
+    font-size: 12px;
+}
+
+div.track.add {
+    background: url('../img/permit_room/Track_In-active1.png');
+}
+
+div.track.add.active {
+    background: url('../img/permit_room/Track_active.png');
+}
+
+div.track.added {
+    background: url('../img/permit_room/Track_active1.png');
+	height:60px;
+	width: 300px;
+}
+
+div.track.added.active {
+    background: url('../img/permit_room/Track_active.png');
+}
+
+div#tracklibrary.selection-locked div.track.add {
+    background: url('../img/permit_room/Track_In-active1.png');
+}
+
+div#tracklibrary.locked div.track {
+    background: url('../img/btn_track_locked.png');
+}
+
+div#playlist-tracks div.track {
+    background: url('../img/btn_track_delete_v2.PNG');
+}
+
+div#playlist-tracks div.track.active {
+    background: url('../img/btn_track_delete_v2_active.PNG');
+}
+
+div.filter {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0;
+	border-radius: 50%;
+	position: relative;
+	background-color: black;
+   /* background: url('../img/permit_room/Alphabet_inactive.png');*/
+  /* margin: 0px 5px 5px 0px*/
+}
+
+div.filter.on {
+	width: 50px;
+    height: 50px;
+    margin-bottom: 0;
+	border-radius: 50%;
+	position: relative;
+	background-color: white;
+	color: black;
+    /*background:url('../img/permit_room/Alphabet_active.png');*/
+}
+
+div.filter.all-video, div.filter.all {
+    margin-top: 10px;
+}
+
+div.filter div.filtername {
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    color: #fff;
+    /*text-transform: lowercase;*/
+   /* margin: 12px 0px 0px 8px;*/
+    /*width: 200px;*/
+    text-align: center;
+}
+div.filter.on div.filtername {
+    color: black;
+}
+div#alphabet div.letter {
+    font-size: 26px;
+    margin: 0 0 5px 10px;
+    color: #278DB5;
+    height: 30px;
+}
+
+div#alphabet div.letter.on {
+    color: #09FCFA;
+}
+
+div#playlist-timeout {
+    background: url('../img/BG_panel_overlay_v2.PNG') no-repeat;
+    position: absolute;
+    top: 782px;
+    left: 60px;
+    width: 800px;
+    height: 230px;
+    display: none;
+    padding: 40px;
+    color: #fff;
+    font-family: "AkkoPro-Thin", "Helvetica Neue", Helvetica, Arial;
+    font-size: 20px;
+}
+
+div#update {
+    z-index: 5000;
+    position: relative;
+    background: url('../img/permit_room/Background_Splash_01.PNG') no-repeat;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+    justify-content: center;
+	align-items: center;
+    display: flex;
+	height: 120vh;
+}
+
+div#update-title {
+	position: absolute;
+    font-family: "AkkoPro-Thin", "Helvetica Neue", Helvetica, Arial;
+    font-size: 20px;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    text-align: center;
+	z-index: 1;
+}
+
+.text-panel {
+	position: relative;
+}
+
+#update img {
+	display: block;
+	max-width: 50%;
+	max-height: 100%;
+	margin: auto;
+}
+
+.track-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /*grid-template-rows: repeat(6, 1fr);*/
+  gap: 1px;
+}
+
+.pagination {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.next-button,
+.prev-button {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.prev-button {
+	order: 1;
+}
+.next-button {
+	order: 2;
+	justify-content: end;
+}
+
+ .prev-button img, .next-button img {
+	max-width: 10%;
+}
+
+div#filterheader {
+	top: 328px;
+    left: 1415px;
+    position: absolute;  
+}
+div#filterheaders {
+	top: 358px;
+    left: 1415px;
+    position: absolute;  
+	display: flex;
+}
+
+div.filterheadername {
+	margin-right: 10px;
+	background:url('../img/permit_room/filter-inactive.png');
+	background-repeat: no-repeat;
+    padding: 19px 40px;
+}
+
+div.filterheadername.on {
+	background:url('../img/permit_room/filter-active.png');
+	background-repeat: no-repeat;
+
+}
+ 
+div.image-container img {
+	display: block;
+	max-width: 50%;
+	max-height: 100%;
+	margin: auto;
+}

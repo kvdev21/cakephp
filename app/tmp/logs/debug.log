@@ -1,0 +1,9 @@
+2023-08-23 17:12:51 Debug: Notice (8): Undefined index: data in [c:\kaleidovision\bin\Jukebox\v1_3_2\lib\Cake\View\JsonView.php, line 103]
+Trace:
+JsonView::_serialize() - ROOT\lib\Cake\View\JsonView.php, line 103
+JsonView::render() - ROOT\lib\Cake\View\JsonView.php, line 86
+Controller::render() - ROOT\lib\Cake\Controller\Controller.php, line 952
+Dispatcher::_invoke() - ROOT\lib\Cake\Routing\Dispatcher.php, line 194
+Dispatcher::dispatch() - ROOT\lib\Cake\Routing\Dispatcher.php, line 162
+[main] - APP\webroot\index.php, line 111
+

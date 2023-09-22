@@ -1,0 +1,376 @@
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background: #000000;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+}
+
+div.main {
+    padding: 25px;
+}
+
+div.gradient {
+    background-repeat: repeat-x;
+    border-radius: 10px;
+    border-top: 2px solid #585858;
+    border-bottom: 2px solid #151515;
+}
+
+div.title {
+    position: absolute;
+    font-family: "Akko Pro Thin", "Helvetica Neue";
+    font-weight: bold;
+    font-size: 34px;
+    color: #20b8b3;
+}
+
+div.title#filters-title {
+    top: 35px;
+    left: 25px;
+}
+
+div.title#tracklibrary-title {
+    top: 35px;
+    left: 355px;
+}
+
+div.title#yourselection-title {
+    top: 40px;
+    left: 50px;
+}
+
+div.title#sendplaylist-title {
+    top: 40px;
+    left: 600px;
+    width: 140px;
+    display: none;
+}
+
+div.title#jukebox-title {
+    top: 150px;
+    left: 880px;
+    -moz-transform: rotate(-90deg);
+    font-size: 70px !important;
+}
+
+div.track {
+    background-repeat: repeat-x;
+    border-top: 2px solid #083147;
+    border-bottom: 3px solid #0C131D;
+    border-left: 2px solid #083147;
+    border-right: 3px solid #0C131D;
+    border-radius: 5px;
+}
+
+div.track div.trackname,
+div.track div.artist {
+    width: 290px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    font-family: "Akko Pro Thin", "Helvetica Neue";
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+div#tracklibrary div.trackname {
+    top: 32px;
+    color: #ffffff;
+}
+
+div#tracklibrary div.artist {
+    top: 12px;
+    color: #2b8eb5;
+}
+
+div#playlist-tracks div.trackname,
+div#playlist-tracks div.artist {
+    font-size: 18px;
+    width: 400px;
+}
+
+div#playlist-tracks div.trackname {
+    top: 42px;
+    color: #ffffff;
+}
+
+div#playlist-tracks div.artist {
+    top: 18px;
+    color: #2b8eb5;
+}
+
+
+div#options {
+    width: 755px;
+    height: 1025px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background-image: url('../img/gradient-large.png');
+}
+
+div#options div#filters {
+    height: 904px;
+    width: 280px;
+    position: absolute;
+    top: 85px;
+    left: 25px;
+    overflow: hidden;
+}
+
+div#filters div.filter {
+    border-top: 2px solid #000000;
+    border-bottom: 3px solid #585858;
+    border-right: 3px solid #585858;
+    border-left: 1px solid #000000;
+    border-radius: 15px;
+    background: url('../img/filter_btn_off.png');
+    width: 270px;
+    height: 52px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding-top: 22px;
+}
+
+div#filters div.filter.on {
+    background: url('../img/filter_btn_on.png');
+}
+
+div#filters div.filter span {
+    font-family: "Akko Pro Thin","Helvetica Neue";
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/*div#options div#tracklibrary-container {
+    width: 364px;
+    height: 904px;
+    position: absolute;
+    top: 85px;
+    left: 355px;
+    overflow: hidden;
+}
+
+div#options div#tracklibrary {
+    position: relative;
+    background: #000000;
+    width: 388px;
+    height: 904px;
+    border-top: 2px solid #000000;
+    border-bottom: 3px solid #505050;
+    border-right: 3px solid #505050;
+    border-left: 1px solid #000000;
+    border-radius: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}*/
+
+div#options div#tracklibrary {
+    position: relative;
+    background: #000000;
+    width: 363px;
+    height: 904px;
+    position: absolute;
+    top: 85px;
+    left: 355px;
+    border-top: 2px solid #000000;
+    border-bottom: 3px solid #505050;
+    border-right: 3px solid #505050;
+    border-left: 1px solid #000000;
+    border-radius: 5px;
+}
+
+div#options div.spinner {
+    position: absolute;
+    left: 529px;
+    top: 529px;
+    background-image: url('../img/spinner.gif');
+    width: 16px;
+    height: 16px;
+}
+
+div#tracklibrary div.tracklibtrack {
+    width: 358px;
+    height: 60px;
+    border-radius: 5px;
+    position: relative;
+    background-image: url('../img/gradient-track-small.png');
+}
+
+div#tracklibrary div.tracklibtrack div.action.add {
+    background: url('../img/btn-add-track.png');
+    width: 29px;
+    height: 26px;
+    position: relative;
+    top: 16px;
+    left: 313px;
+}
+
+div#tracklibrary div.tracklibtrack div.action.added {
+    background: url('../img/btn-added-track.png');
+    width: 29px;
+    height: 26px;
+    position: relative;
+    top: 16px;
+    left: 313px;
+}
+
+div#tracklibrary.selection-locked div.tracklibtrack div.action.add {
+    visibility: hidden;
+}
+
+div#tracklibrary.locked div.tracklibtrack div.action.add,
+div#tracklibrary.locked div.tracklibtrack div.action.added {
+    visibility: hidden;
+}
+
+div#video {
+    width: 1075px;
+    height: 600px;
+    position: absolute;
+    top: 25px;
+    left: 805px;
+    background-image: url('../img/gradient-medium.png');
+}
+
+div#video #video-container {
+    background: #000000;
+    width: 1025px;
+    height: 550px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    border: 1px #000000 solid;
+    border-radius: 10px;
+}
+
+div#video #video-container #videoElement {
+    /*background-image: url('../img/videoExample.png');*/
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 965px;
+    height: 490px;
+}
+
+div#playlist {
+    width: 1075px;
+    height: 400px;
+    position: absolute;
+    top: 650px;
+    left: 805px;
+    background-image: url('../img/gradient-small.png');
+}
+
+div#playlist div#playlist-tracks {
+    height: 254px;
+    width: 471px;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+}
+
+div#playlist-tracks div.trackseltrack-wrapper {
+    width: 471px;
+    height: 81px;
+    border-top: 2px solid #000000;
+    border-bottom: 3px solid #323232;
+    border-right: 3px solid #323232;
+    border-left: 2px solid #000000;
+    border-radius: 6px;
+    position: relative;
+}
+
+div#playlist-tracks div.trackseltrack-wrapper:last-child {
+    height: 85px;
+}
+
+
+div#playlist-tracks div.trackseltrack {
+    width: 466px;
+    height: 80px;
+    border-radius: 5px;
+    position: absolute;
+    background-image: url('../img/gradient-track-large.png');
+}
+
+div#playlist-tracks div.trackseltrack div.action.remove {
+    background: url('../img/btn-remove-track.png');
+    width: 32px;
+    height: 30px;
+    position: relative;
+    top: 7px;
+    left: 423px;
+}
+
+div#playlist div#send-playlist {
+    background: url('../img/send_btn_off.png');
+    width: 95px;
+    height: 100px;
+    position: absolute;
+    top: 150px;
+    left: 615px;
+    display: none;
+}
+
+div#playlist div#send-playlist:hover {
+    background: url('../img/send_btn_on.png');
+}
+
+div#playlist div#thank-you {
+    top: 40px;
+    left: 50px;
+    right: 50px;
+    bottom: 40px;
+    visibility: hidden;
+}
+
+div#playlist.locked * {
+    visibility: hidden;
+}
+
+div#playlist.locked div#thank-you {
+    visibility: visible;
+}
+
+/**
+ * Update
+ */
+
+div#update {
+    width: 1855px;
+    height: 1025px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background-image: url('../img/gradient-large.png');
+    z-index: 2;
+}
+
+div.title#update-title {
+    top: 35px;
+    left: 25px;
+}
+
+div#update div.spinner {
+    position: absolute;
+    left: 864px;
+    top: 449px;
+    background-image: url('../img/286.GIF');
+    width: 128px;
+    height: 128px;
+}
